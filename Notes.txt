@@ -1,0 +1,20 @@
+data type is a class
+variable of a data type is an obejct
+class name is in PascalCase
+Varibale name is in snake_case
+private data members are denoted by -
+public member functions are denoted by +
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+mylist1 = [1,2,3,4,5]
+When i do this, I m creating an object of list class and the members of mylist1 are passed as arguments to the constructor of the list class and assigned to mylist1[0], mylist1[1] and so on (index of the list object).
+After the elements are assigned, mylist1 becomes an object of the list class, and you can access its elements using index notation.
+mylist1 = list([1,2,3,4,5])
+explicitly calling list constructor
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+built-in classes are : list, dict, set, int, float
+no need to define classes for these built-in classes because python has provided us facility to use them directly
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+METHODS VS FUNCTIONS
+1. A method is essentially a function that is associated with an object. Methods are functions defined inside a class, and they are called on instances (objects) of that class. They always take the object itself (self in Python) as the first argument, which allows the method to operate on the object's attributes.
+2. A function is a block of code that performs a specific task and can be called independently. Functions can take input arguments, perform operations, and return a value. They are defined using the def keyword.
+3. len() is a function but mylist.append() is a method defined inside list class.
