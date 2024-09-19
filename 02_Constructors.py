@@ -22,3 +22,17 @@ class Car:
 
 my_car = Car('Tesla','Model S',2022)
 my_car.showData()
+
+
+class Bus:
+  def __init__(self,brand1,model1,year1):    # parameterized constructor
+    self.brand = brand1     #data members of the class
+    self.model = model1
+    self.year = year1
+  def showData(self):
+    print('Brand:' + self.brand)
+    print('Model:' + self.model)
+    print('Year:' + str(self.year))
+
+my_bus = Bus('Scorpio','Model 5',2025)
+my_bus.showData()
