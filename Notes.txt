@@ -3,7 +3,7 @@ variable of a data type is an obejct
 class name is in PascalCase
 Varibale name is in snake_case
 private data members are denoted by -
-public member functions are denoted by +
+public member functions(methods) are denoted by +
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 mylist1 = [1,2,3,4,5]
 When i do this, I m creating an object of list class and the members of mylist1 are passed as arguments to the constructor of the list class and assigned to mylist1[0], mylist1[1] and so on (index of the list object).
@@ -25,8 +25,10 @@ The constructor method in Python is called __init__().This method is automatical
 The first parameter of the constructor is always self, which refers to the current object being created.
 Consturctor contains configuration code, initialization.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
+self = keyword
+When you call a method on an object:
+The object itself is automatically passed as the first argument to the method. The method receives this object using the self parameter.
+In OOP, only the objects of the class can access the methods of the class. This means that one method can not access any other methods of the same class. For calling one method from another method of the same class, self parameter i.e. the object itself is automatically passed to the method during method call. 
 
 
 
