@@ -18,3 +18,12 @@ METHODS VS FUNCTIONS
 1. A method is essentially a function that is associated with an object. Methods are functions defined inside a class, and they are called on instances (objects) of that class. They always take the object itself (self in Python) as the first argument, which allows the method to operate on the object's attributes.
 2. A function is a block of code that performs a specific task and can be called independently. Functions can take input arguments, perform operations, and return a value. They are defined using the def keyword.
 3. len() is a function but mylist.append() is a method defined inside list class.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+A constructor in Python is a special method that is automatically called when an object of a class is created. It is used to initialize the object's attributes (properties) when it is instantiated.
+The constructor method in Python is called __init__().This method is automatically invoked when you create an object from a class.
+The first parameter of the constructor is always self, which refers to the current object being created.
+
+
+
+
+
