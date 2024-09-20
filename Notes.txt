@@ -29,6 +29,17 @@ self = keyword
 When you call a method on an object:
 The object itself is automatically passed as the first argument to the method. The method receives this object using the self parameter.
 In OOP, only the objects of the class can access the methods of the class. This means that one method can not access any other methods of the same class. For calling one method from another method of the same class, self parameter i.e. the object itself is automatically passed to the method during method call. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Displaying Fractions using __str__ method:
+__str__ is a magic/dunder method in OOP
+It is automatically called when we try to print an object. Whatever is the value returned by this method is printed.
+If there is no such method, python displays the default string representation of the object
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+__add__ magic method:It is called when there is binary operation +  between two objects
+__sub__ magic method:It is called when there is binary operation -  between two objects
+__mul__ magic method:It is called when there is binary operation *  between two objects
+__truediv__ magic method:It is called when there is binary operation /  between two objects
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
