@@ -40,6 +40,8 @@ __sub__ magic method:It is called when there is binary operation -  between two 
 __mul__ magic method:It is called when there is binary operation *  between two objects
 __truediv__ magic method:It is called when there is binary operation /  between two objects
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
+Instance Variable:
+It belongs to a specific instance(object) of a class in Python.
+Each instance of the class has its own separate copy of the instance variables.
+Changes to instance variable of one object do not affect the instance variables of another object, even if both objects are from the same class.
+Defined in the constructor using self keyword
