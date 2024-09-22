@@ -2,6 +2,7 @@ class Atm:
   def __init__(self):
     self.__pin = ''   # Interpreter converts it to: __Atm__pin
     self.__balance = 0  # Interpreter converts it to: __Atm__balance
+    print(id(self))
     self.__menu()
 
   def get_pin(self):

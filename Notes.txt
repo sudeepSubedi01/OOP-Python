@@ -54,9 +54,31 @@ Encapsulation:
 Encapsulation refers to the concept of bundling data (attributes) and methods (functions) that operate on the data into a single unit, typically a class, and restricting direct access to some of the object's components.
 To make a varibale private (not accessible outside the class), data members' and methods' name is prefixed with __. Now this data member and method cant be accessed, even by object from outside the class.
 Data members and methods are hidden after doing this
- 
-
-
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Reference Variable:
+A variable that holds a reference (or pointer) to an object, rather than the object itself.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Instance variable has separate value for each object/instance. They are defined inside the constructor
+Static variable/Class variable is maintained for all the objects of the class. They are defined outside the class
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Relationship: describes how different classes or objects in python are related to each other
+Two types: Aggregation(has a) and Inheritance(is a)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Aggregation(has a) : 
+one class (the whole) contains objects of another class (the parts). 
+------------------------------------------------------------------------------------------------------------------------------------------
+super() function:
+Used to give access to methods and properties of a parent or sibling class. It allows you to call a method from the parent class inside a child class
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Polymorphism:
+1. Method Overriding
+2. Method Overloading
+3. Operator Overloading
+--------------------------------------------------------------------------------------------------------------------------------
+Method Overloading:
+Not possible in python. Can be achieved logically.
+-------------------------------------------------------------------------------------------------------------------------
+Operator Overloading:
+Can be done using magic methods.
 
 
