@@ -45,3 +45,18 @@ It belongs to a specific instance(object) of a class in Python.
 Each instance of the class has its own separate copy of the instance variables.
 Changes to instance variable of one object do not affect the instance variables of another object, even if both objects are from the same class.
 Defined in the constructor using self keyword
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name Mangling: 
+Name mangling in Python is a mechanism used to make certain class attributes (usually those marked as private) less accessible from outside the class. 
+When you prefix a variable or method name with double underscores (__), Python changes the name internally by adding the class name as a prefix. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Encapsulation:
+Encapsulation refers to the concept of bundling data (attributes) and methods (functions) that operate on the data into a single unit, typically a class, and restricting direct access to some of the object's components.
+To make a varibale private (not accessible outside the class), data members' and methods' name is prefixed with __. Now this data member and method cant be accessed, even by object from outside the class.
+Data members and methods are hidden after doing this
+ 
+
+
+
+
+

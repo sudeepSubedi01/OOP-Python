@@ -63,7 +63,18 @@ class Atm:
       print('Invalid Pin. Try again!!')
       self.check_balance()
 
-  def exit_atm():
+  def exit_atm(self):
     print('Thank you for using our ATM service')
 
 sbi = Atm()
+
+
+# For encapsulation:
+# Remove self.menu() from __init__ method
+# Open python interperter
+# python
+# from ATM import Atm
+# sbi = Atm()
+# Try changing the content of the data members from outside the class through that object
+# sbi.balance()
+# This can easily change the content of the variable. So to prevent this ENCAPSULATION is done.
