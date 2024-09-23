@@ -25,12 +25,15 @@ class Coordinate:
       return ((other.y_cord-self.y_cord)/(other.x_cord-self.x_cord))
     
   def line_equation(self,other):
-    print('Equation of line is:')
     if other.x_cord-self.x_cord > 0:
-      print(f'{other.y_cord - self.y_cord}x - {other.x_cord-self.x_cord}y = {self.x_cord*other.y_cord - other.x_cord*self.y_cord}')
+      return f'{other.y_cord - self.y_cord}x - {other.x_cord-self.x_cord}y = {self.x_cord*other.y_cord - other.x_cord*self.y_cord}'
     else:
-      print(f'{other.y_cord - self.y_cord}x + {-(other.x_cord-self.x_cord)}y = {self.x_cord*other.y_cord - other.x_cord*self.y_cord}')
-  
+      return f'{other.y_cord - self.y_cord}x + {-(other.x_cord-self.x_cord)}y = {self.x_cord*other.y_cord - other.x_cord*self.y_cord}'
+
+  def distance(self,other):
+    return ((other.x_cord-self.x_cord)**2 + (other.y_cord-self.y_cord)**2 )**(1/2)
+
+
 print('Enter first coordinate:')
 c1 = Coordinate(input('Enter x-coordinate: '),input('Enter y-coordinate: '))
 print('Enter second coordinate:')
@@ -45,4 +48,6 @@ print(f'The difference is: {c4}')
 slope = c1.calculate_slope(c2)
 print(f'The slope is: {slope}')
 
-c1.line_equation(c2)
+print('Equation of line is:', c1.line_equation(c2))
+
+print('Distance between points: ', (c1.distance(c2)))
