@@ -1,26 +1,39 @@
 class Coordinate:
-  # def __init__(self,x,y):
-  #   self.x_cord = x
-  #   self.y_cord = y
+  def __init__(self,x=0,y=0):
+    self.x_cord = int(x)
+    self.y_cord = int(y)
+  
+  def __str__(self):
+    return '({},{})'.format(self.x_cord,self.y_cord)  
   
   def __add__(self,other):
-    temp = Coordinate(0,0)
+    temp = Coordinate()
     temp.x_cord = self.x_cord + other.x_cord
     temp.y_cord = self.y_cord + other.y_cord
     return temp
 
-  def get_coordinates(self):
-    self.x_cord = input('Enter x-coordinate: ')
-    self.y_cord = input('Enter y-coordinate: ')
+  def __sub__(self,other):
+    temp = Coordinate()
+    temp.x_cord = self.x_cord - other.x_cord
+    temp.y_cord = self.y_cord - other.y_cord
+    return temp  
   
-  def show_coordinates(self):
-    print('(x,y) =','(',self.x_cord,',',self.y_cord,')')
+  def calculate_slope(self,other):
+    if self.x_cord == other.x_cord:
+      return 'Line is parallel to y-axis'
+    else:
+      return ((other.y_cord-self.y_cord)/(other.x_cord-self.x_cord))
+  
+print('Enter first coordinate:')
+c1 = Coordinate(input('Enter x-coordinate: '),input('Enter y-coordinate: '))
+print('Enter second coordinate:')
+c2 = Coordinate(input('Enter x-coordinate: '),input('Enter y-coordinate: '))
 
-c1 = Coordinate()
-c2 = Coordinate()
+c3 = c1+c2
+print(f'The sum is: {c3}')
 
-c1.get_coordinates()
-c2.get_coordinates()
+c4 = c1-c2
+print(f'The difference is: {c4}')
 
-c1.show_coordinates()
-c2.show_coordinates()
+slope = c1.calculate_slope(c2)
+print(f'The slope is: {slope}')
